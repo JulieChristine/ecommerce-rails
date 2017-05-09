@@ -8,10 +8,9 @@
 <% end %>
 
 <% @booklist.each do |book| %>
-  <div class="container">
-    <p><%= book['rank'] %></p>
+  <div class="col-xs-4">
     <img src="<%= book['book_image'] %>" alt="book">
-    <p><%= book['title'] %></p>
+    <p><%= book['rank'] %> <%= book['title'] %></p>
     <p><%= book['author'] %></p>
     <p><%= book['description'] %></p>
     <p><%= book['book_review_link'] %></p>
