@@ -3,5 +3,8 @@ class ProductsController < ApplicationController
   def index
       @products = Product.all
       @order_item = current_order.order_items.new
-    end
+      bs = Bestseller.new
+      response = JSON.parse(bs.get_bestseller_list)
+      @booklist = response["results"]["books"]
   end
+end
