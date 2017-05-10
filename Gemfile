@@ -47,6 +47,8 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'dotenv-rails'
   gem 'rspec-rails'
+  gem 'vcr', '~> 3.0', '>= 3.0.3'
+  gem 'webmock', '~> 3.0', '>= 3.0.1'
 end
 
 group :development do
